@@ -1,14 +1,169 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Itg</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><%= h(yield(:title) || "Untitled")%></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
+    <%= javascript_include_tag "jquery-1.4.4.min.js", "jquery.rails.js", "jquery.color.js" %>
+    <%#= javascript_include_tag :defaults %>
+    <%#= include_tiny_mce_if_needed %>
+    <%#= javascript_include_tag :ckeditor %>
+    
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+ 
+   <div id="section">
+	<div id="left-col">
+    <div id="sidebar_border">
+	<div id="sidebar">
+		<ul>
+        	<li><a href="#">О компании</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Фабрики</a></li>
+            <li><a href="#">Условия заказа</a></li>
+            <li><a href="#">Наши проекты</a></li>
+            <li><a href="#">Вопросы и ответы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+        </ul>
+    </div>
+    <div id="news">
+    <a style="color: #fff; font-size: 14px; text-decoration:underline;" href="#">Новости</a>
+    	<div class="galery_news">
+    	<%= image_tag "news_pic1.jpg" %>
+        <p>03.06.2011</p>
+        <hr style="margin: 3px 0; border-top: #ffcc00 dashed;" size="1" />
+        <p1>PREGNO</p1>
+        </div>
+        <div class="galery_news">
+    	<%= image_tag "news_pic2.jpg" %>
+        <p>03.06.2011</p>
+        <hr style="margin: 3px 0; border-top: #ffcc00 dashed;" size="1" />
+        <p1>PREGNO</p1>
+        </div>
+        <div class="galery_news">
+    	<%= image_tag "/news_pic3.jpg" %>
+        <p>03.06.2011</p>
+        <hr style="margin: 3px 0; border-top: #ffcc00 dashed;" size="1" />
+        <p1>PREGNO</p1>
+        </div>
+        
+    </div>
+    </div>    
+    </div>
+    <div id="content">
+    	<div id="content_left">
+        	<div id="content_left_img">
+            	<div id="content_left_uzor">
+                	<div id="sidebar_content_left">
+                    <p style="margin-left: 20px; color: #ffc000;"><%= image_tag "sidebar_content_left_pic.png" %> <b>Каталог мебели:</b></p>
+                    	<ul>
+                            <li><a href="#">Кухни</a></li>
+                            <li><a href="#">Спальни</a></li>
+                            <li><a href="#">Прихожие</a></li>
+                            <li><a href="#">Гостиные</a></li>
+                            <li><a href="#">Стулья</a></li>
+                            <li><a href="#">Мягкая мебель</a></li>
+                            <li><a href="#">Столовые комнаты</a></li>
+                            <li><a href="#">Кабинеты</a></li>
+                            <li><a href="#">Детская мебель</a></li>
+                            <li><a href="#">Мебель для кафе
+и ресторанов</a></li>
+                            <li><a href="#">Мебель для домашних
+кинотеатров TV Hi-Fi</a></li>
+                            <li><a href="#">Двери</a></li>
+                            <li><a href="#">Ванные комнаты</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                            <li><a href="#">Светильники</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content_body">
+        	<div id="filtr">
+                    <form action="#">
+                    <div id="razdel">
+                        <select class="selectBlock">
+                            <option>Выбрать раздел</option>
+                            <option>Выбрать раздел</option>
+                            <option>Выбрать раздел</option>
+                            <option>Выбрать раздел</option>
+                            <option>Выбрать раздел</option>
+                        </select>
+                    </div>
+                     <div id="razdel">
+                        <select class="selectBlock">
+                            <option>Выбрать предмет</option>
+                            <option>Выбрать предмет</option>
+                            <option>Выбрать предмет</option>
+                            <option>Выбрать предмет</option>
+                            <option>Выбрать предмет</option>
+                        </select>
+                    </div>
+                     <div id="razdel">
+                        <select class="selectBlock">
+                            <option>Выбрать фабрику</option>
+                            <option>Выбрать фабрику</option>
+                            <option>Выбрать фабрику</option>
+                            <option>Выбрать фабрику</option>
+                            <option>Выбрать фабрику</option>
+                        </select>
+                    </div>
+                     <div id="razdel">
+                        <select class="selectBlock">
+                            <option>Выбрать стиль</option>
+                            <option>Выбрать стиль</option>
+                            <option>Выбрать стиль</option>
+                            <option>Выбрать стиль</option>
+                            <option>Выбрать стиль</option>
+                        </select>
+                    </div>
+                    <div id="razdel">
+                    	<input type="submit" value="" id="searchbutton"/>
+                    </div>
+                	</form>
+            </div>
+            <div id="content_main">
+            	<div style="position:relative; top:30px; left: 50px; text-align: justify; width: 965px;">
+                	<h1>Компания ITGK (International Trading Group Kazan) </h1>
+                    <p>Представляет в России элитную мебель, световое оборудование, сантехнику, мебель для ванных комнат, плитку, отделочные материалы, аксессуары для интерьера из Италии, Германии, США и других стран.  Осуществляем поставки мебели под различные объекты, поставку элитной мебели, поставку офисной мебели. Производим полную комплектацию объектов.</p>
+                    <p>Российское представительство международной компании International Trading Group (ITG) было основано в 2001 году и занимается занимается контрактными поставками мебели, светового оборудования, сантехнического оборудования, плитки, строительных и отделочных материалов, аксессуаров для интерьера, AV-техники. Мы помогаем заказчикам, проектировщикам, исполнителям и отделам снабжения строительных фирм минимизировать затраты на комплектацию строительных объектов предметами и элементами интерьера.</p>
+                    <p style="font-size: 19px;">International Trading Group – это профессиональный подход в создании дизайн-проектов, курирование объекта на всех этапах строительства, консультации по выбору фабрики производителя, качеству выбранного товара.</p>
+                    <div class="group_gallery">
+                    	<%= image_tag "pic1.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Поставка мебели</p>
+                    </div>
+                    <div class="group_gallery">
+                    	<%= image_tag "pic2.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Поставка сантехники</p>
+                    </div>
+                    <div class="group_gallery" style=" margin-right: 0px;">
+                    	<%= image_tag "pic3.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Поставка светового <br />оборудования</p>
+                    </div>
+                    <div class="group_gallery" style=" margin-top: 50px;">
+                    	<%= image_tag "pic4.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Двери</p>
+                    </div>
+                    <div class="group_gallery" style=" margin-top: 50px;">
+                    	<%= image_tag "pic5.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Окна</p>
+                    </div>
+                    <div class="group_gallery" style=" margin-top: 50px; margin-right: 0px;">
+                    	<%= image_tag "pic6.jpg" %>
+                        <p style="font-size: 14px; color:#000; text-align:center;">Плитка и отделочные <br />материалы</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+	</div>
+    <div style="clear: left;"></div>
+</div>    
+<!-- end section-->
 
-<%= yield %>
-
-</body>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>
