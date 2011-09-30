@@ -1,5 +1,7 @@
 Itg::Application.routes.draw do
   
+  resources :products
+
   resources :catalog_mebelis
 
   root :to => "pages#home"

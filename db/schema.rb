@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110930031938) do
+ActiveRecord::Schema.define(:version => 20110930042226) do
 
   create_table "catalog_mebelis", :force => true do |t|
     t.string   "title"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20110930031938) do
   create_table "products", :force => true do |t|
     t.string   "title"
     t.string   "article"
-    t.decimal  "price",        :precision => 8, :scale => 2
+    t.decimal  "price",               :precision => 8, :scale => 2
     t.string   "series"
     t.string   "presence"
     t.integer  "lgth"
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(:version => 20110930031938) do
     t.integer  "style_m_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   create_table "style_ms", :force => true do |t|

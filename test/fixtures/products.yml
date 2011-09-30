@@ -7,7 +7,7 @@ one:
   series: MyString
   presence: MyString
   lgth: 1
-  dуpth: 1
+  dpth: 1
   height: 1
   description: MyText
   catalog_m_id: 1
@@ -20,7 +20,7 @@ two:
   series: MyString
   presence: MyString
   lgth: 1
-  dуpth: 1
+  dpth: 1
   height: 1
   description: MyText
   catalog_m_id: 1
