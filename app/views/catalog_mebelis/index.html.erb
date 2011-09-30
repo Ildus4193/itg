@@ -1,0 +1,23 @@
+<h1>Listing catalog_mebelis</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @catalog_mebelis.each do |catalog_mebeli| %>
+  <tr>
+    <td><%= catalog_mebeli.title %></td>
+    <td><%= link_to 'Show', catalog_mebeli %></td>
+    <td><%= link_to 'Edit', edit_catalog_mebeli_path(catalog_mebeli) %></td>
+    <td><%= link_to 'Destroy', catalog_mebeli, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Catalog mebeli', new_catalog_mebeli_path %>
