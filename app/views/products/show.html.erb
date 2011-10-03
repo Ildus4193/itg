@@ -1,60 +1,87 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @product.title %>
-</p>
-
-<p>
-  <b>Article:</b>
-  <%= @product.article %>
-</p>
-
-<p>
-  <b>Price:</b>
-  <%= @product.price %>
-</p>
-
-<p>
-  <b>Series:</b>
-  <%= @product.series %>
-</p>
-
-<p>
-  <b>Presence:</b>
-  <%= @product.presence %>
-</p>
-
-<p>
-  <b>Lgth:</b>
-  <%= @product.lgth %>
-</p>
-
-<p>
-  <b>Dpth:</b>
-  <%= @product.dpth %>
-</p>
-
-<p>
-  <b>Height:</b>
-  <%= @product.height %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @product.description %>
-</p>
-
-<p>
-  <b>Catalog m:</b>
-  <%= @product.catalog_m_id %>
-</p>
-
-<p>
-  <b>Style m:</b>
-  <%= @product.style_m_id %>
-</p>
 
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="model">
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody><tr valign="top">
+              <td width="50%" nowrap="">
+                <h1><%= @product.title %> <%= @product.article %></h1> 
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td><!--Картинка-->
+                <div id="model_content" style="margin-right: 20px;">
+                  <%= image_tag(@product.avatar.url) %>
+                </div>
+      <td><!--Описание-->
+
+        <table cellspacing="1" cellpadding="3" border="0">
+          <tbody><tr>
+          <form action="/notepad.aspx" method="post"></form>
+          <td><b class="model_desc">Цена</b></td>
+          <td>						
+          </td>
+
+    </tr>
+    <tr>
+      <td><b class="model_desc">Название</b></td>
+      <td>Comp 07</td>
+    </tr>
+    <tr>
+      <td><b class="model_desc">Серия</b></td>
+      <td><%= @product.series %></td>
+    </tr>
+    <tr>
+      <td><b class="model_desc">Производитель</b></td>
+      <td><%= @product.title %></td>
+    </tr>
+    <tr>
+      <td><b class="model_desc">Стиль</b></td>
+      <td><a target="_blank" class="black" href="style.aspx?ob_no=16356">арт деко, гламур</a></td>
+    </tr>
+    <% if @product.lgth.present? %>
+    <tr>
+      <td style="text-align:left;" class=""><b class="model_desc">Длина</b></td>		
+      <td colspan="2" class=""><%= @product.lgth %>
+      </td>
+    </tr>
+    <% end %>
+    <% if @product.dpth.present? %>
+    <tr>
+      <td style="text-align:left;" class=""><b class="model_desc">Глубина</b></td>				
+      <td colspan="2" class=""><%= @product.dpth %>
+      </td>				
+    </tr>
+    <% end %>
+    <tr>
+      <td style="text-align:left;" class=""><b class="model_desc">Высота</b></td>			
+      <td colspan="2" class=""><%= @product.height %>				
+      </td>				
+    </tr>
+    <% if @product.height.present? %>
+    <tr>
+      <td><b class="model_desc">Описание</b></td>
+      <td><%= @product.description %></td>
+    </tr>
+    <% end %>
+
+
+  </tbody></table>
+
+
+<!--/Описание--></p></td>
+</tr>
+</tbody>
+</table>
+
+
+<%#= link_to 'Edit', edit_product_path(@product) %>
+<%#= link_to 'Back', products_path %>

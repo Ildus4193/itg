@@ -10,7 +10,7 @@ one:
   dpth: 1
   height: 1
   description: MyText
-  catalog_m_id: 1
+  catalog_mebelis_id: 1
   style_m_id: 1
 
 two:
@@ -23,5 +23,5 @@ two:
   dpth: 1
   height: 1
   description: MyText
-  catalog_m_id: 1
+  catalog_mebelis_id: 1
   style_m_id: 1

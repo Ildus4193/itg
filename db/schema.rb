@@ -10,15 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110930042226) do
+ActiveRecord::Schema.define(:version => 20111001181204) do
 
   create_table "catalog_mebelis", :force => true do |t|
-    t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "catalog_ms", :force => true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -27,14 +21,14 @@ ActiveRecord::Schema.define(:version => 20110930042226) do
   create_table "products", :force => true do |t|
     t.string   "title"
     t.string   "article"
-    t.decimal  "price",               :precision => 8, :scale => 2
+    t.decimal  "price"
     t.string   "series"
     t.string   "presence"
     t.integer  "lgth"
     t.integer  "dpth"
     t.integer  "height"
     t.text     "description"
-    t.integer  "catalog_m_id"
+    t.integer  "catalog_mebeli_id"
     t.integer  "style_m_id"
     t.datetime "created_at"
     t.datetime "updated_at"

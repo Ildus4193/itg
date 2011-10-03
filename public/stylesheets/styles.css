@@ -325,7 +325,7 @@ body {
 	height: 783px;
 }
 #content_main p{
-	margin-bottom: 20px;
+	margin-bottom: 3px;
 }
 
 
@@ -452,15 +452,15 @@ margin-bottom: 10px;
 .group_gallery {
     float: left;
 	margin-top: 10px;
-	margin-right: 120px;
+	margin-right: 155px;
     position: relative;
-    width: 240px;
+    width: 150px;
 	height: 180px;
 }
 .group_gallery img {
-    width: 240px;
-	height: 180px;
-	border: 3px solid #d0d0d0;
+    width: 150px;
+	height: 113px;
+	
 
 }
 
@@ -487,4 +487,26 @@ margin-bottom: 10px;
 	color: #ffcc00;
 	font-size: 14px;
 
+}
+
+.model h1 {
+        font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
+	padding-bottom: 5px;
+	font-size: 24px;
+        color: #F26925;
+}
+.model td {
+        font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
+	padding-bottom: 5px;
+	font-size: 14px;
+}
+
+#model_content td{
+    max-width: 250px;
+    padding: 0;
+}
+
+#model_content img {
+    max-width: 250px;
+    padding: 0;
 }

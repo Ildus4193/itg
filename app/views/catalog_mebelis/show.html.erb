@@ -1,10 +1,6 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Title:</b>
-  <%= @catalog_mebeli.title %>
-</p>
-
-
-<%= link_to 'Edit', edit_catalog_mebeli_path(@catalog_mebeli) %> |
-<%= link_to 'Back', catalog_mebelis_path %>
+<div style="position:relative; top:55px; left: 105px; text-align: justify; width: 965px;">
+    <%= render @products %>
+</div>
+<div style="clear: left; padding-bottom: 35px;"></div>
+<%#= link_to 'Edit', edit_catalog_mebeli_path(@catalog_mebeli) %> 
+<%#= link_to 'Back', catalog_mebelis_path %>

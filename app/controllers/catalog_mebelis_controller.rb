@@ -13,11 +13,11 @@ class CatalogMebelisController < ApplicationController
   # GET /catalog_mebelis/1
   # GET /catalog_mebelis/1.xml
   def show
-    @catalog_mebeli = CatalogMebeli.find(params[:id])
+    @products = CatalogMebeli.find(params[:id]).products
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @catalog_mebeli }
+      format.xml  { render :xml => @product }
     end
   end
 
