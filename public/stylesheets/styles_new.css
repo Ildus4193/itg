@@ -38,11 +38,11 @@ html, body
 body {
    vertical-align: middle;
 	background-color:#999;
-   background: url(/images/body_bg.jpg);
+   background: url(../img/body_bg.jpg);
    
 }
 #header {
-	background: url(/images/header_bg.png) no-repeat;
+	background: url(../img/header_bg.png) no-repeat;
 	width: 1425px;
 	height: 172px;
 	margin: 0 auto;
@@ -73,7 +73,7 @@ body {
 	cursor: pointer;
 	width: 361px;
 	height: 32px;
-	background: url(/images/search_bg.png) no-repeat 100% 100%;
+	background: url(../img/search_bg.png) no-repeat 100% 100%;
 	border: 0px;
 	margin-left: 0px;
 	vertical-align: top;
@@ -84,7 +84,7 @@ body {
 	cursor: pointer;
 	width: 59px;
 	height: 32px;
-	background: url(/images/search_btn.png) no-repeat 100% 100%;
+	background: url(../img/search_btn.png) no-repeat 100% 100%;
 	border: 0px;
 	vertical-align: top;
 }
@@ -202,7 +202,7 @@ body {
 
 #sidebar ul li {	
   margin: 12px 20px;
-  list-style-image: url(/images/sidebar_li.png);
+  list-style-image: url(../img/sidebar_li.png);
   text-indent: -5px;
 
 }
@@ -294,14 +294,14 @@ body {
 }
 #content_left_img {
 	position:relative;
-	background: url(/images/content_left.jpg) no-repeat;
+	background: url(../img/content_left.jpg) no-repeat;
 	width: 175px;
 	height: 100%;
 
 }
 #content_left_uzor {
 	position:relative;
-	background: url(/images/content_left_uzor.png);
+	background: url(../img/content_left_uzor.png);
 	width: 175px;
 	min-height: 830px;
 	height:100%;
@@ -318,7 +318,7 @@ body {
 }
 #filtr {
 	position: relative;
-	background: url(/images/filtr_bg.png) repeat-x;
+	background: url(../img/filtr_bg.png) repeat-x;
 	background-position:right;
 	width: 1072px;
 	height: 43px;
@@ -344,7 +344,7 @@ body {
 		height:27px;
 		padding:0 30px 0 10px;
 		overflow:hidden;
-		background:url(/images/select.png);
+		background:url(../img/select.png);
 		color:#666666;
 		font-size:14px;
 		font-family: "Myriad Pro", Verdana, Geneva, sans-serif; 
@@ -391,7 +391,7 @@ body {
 	cursor: pointer;
 	width: 75px;
 	height: 28px;
-	background: url(/images/submit.png) no-repeat 100% 100%;
+	background: url(../img/submit.png) no-repeat 100% 100%;
 	border: 0px;
 	margin-left: -10px;
 	vertical-align: top;
@@ -415,7 +415,7 @@ body {
 	border-right: solid 1px #000;
 	width: 351px;
 	height: 200px;
-	background: url(/images/ftr_bg.png) repeat-x;
+	background: url(../img/ftr_bg.png) repeat-x;
 }
 #ft_menu {
 	position: relative;
@@ -424,7 +424,7 @@ body {
 	height: 200px;
 	border-left: solid 1px #5b5a5a;
 	border-right: solid 1px #878787;
-	background: url(/images/ftr_bg.png) repeat-x;
+	background: url(../img/ftr_bg.png) repeat-x;
 }
 #ftr_table {
 	position: relative;
@@ -458,63 +458,40 @@ margin-bottom: 10px;
 
 .group_gallery {
     float: left;
-    margin-top: 10px;
-    margin-right: 155px;
+	margin-top: 10px;
+	margin-right: 120px;
     position: relative;
-    width: 150px;
-    height: 180px;
+    width: 240px;
+	height: 180px;
 }
 .group_gallery img {
-    width: 150px;
-    height: 113px;
-    border: 3px solid #d0d0d0;
+    width: 240px;
+	height: 180px;
+	border: 3px solid #d0d0d0;
 
 }
 
 #news {
-    width:118px;
-    position: relative;
-    top: 30px;
-    margin:0 auto;
+	width:118px;
+	position: relative;
+	top: 30px;
+	margin:0 auto;
 }
 .galery_news {
-    position: relative;
-    margin-top: 20px;
+	position: relative;
+	margin-top: 20px;
 }
 .galery_news img{
-    width:114px;
-    border: 2px solid #4d4d4f;
+	width:114px;
+	border: 2px solid #4d4d4f;
 }
 .galery_news p{
-    color: #999;
-    font-size: 12px;
-    margin-top: 3px;
+	color: #999;
+	font-size: 12px;
+	margin-top: 3px;
 }
 .galery_news p1{
-    color: #ffcc00;
-    font-size: 14px;
+	color: #ffcc00;
+	font-size: 14px;
 
 }
-
-.model h1 {
-        font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
-       padding-bottom: 5px;
-       font-size: 24px;
-        color: #F26925;
-}
-.model td {
-        font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
-       padding-bottom: 5px;
-       font-size: 14px;
-}
-
-#model_content td{
-    max-width: 250px;
-    padding: 0;
-}
-
-#model_content img {
-    max-width: 250px;
-    padding: 0;
-}
-
