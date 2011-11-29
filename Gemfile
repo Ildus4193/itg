@@ -8,6 +8,9 @@ gem 'rails', '3.0.9'
 gem 'sqlite3'
 gem "paperclip", "~> 2.3"
 gem 'jquery-rails'
+gem 'meta_where'
+gem 'meta_search'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -8,11 +8,11 @@
     <%#= javascript_include_tag :defaults %>
     <%#= include_tiny_mce_if_needed %>
     <%#= javascript_include_tag :ckeditor %>
-    
+
   </head>
   <body>
     <%= render 'layouts/header' %>
- 
+
    <div id="section">
 	<div id="left-col">
     <div id="sidebar_border">
@@ -48,9 +48,9 @@
         <hr style="margin: 3px 0; border-top: #ffcc00 dashed;" size="1" />
         <p1>PREGNO</p1>
         </div>
-        
+
     </div>
-    </div>    
+    </div>
     </div>
     <div id="content">
     	<div id="content_left">
@@ -75,65 +75,25 @@
                             <li><%= link_to "Двери", catalog_mebeli_path(:id => 12) %></li>
                             <li><%= link_to "Ванные комнаты", catalog_mebeli_path(:id => 13) %></li>
                             <li><%= link_to "Аксессуары", catalog_mebeli_path(:id => 14) %></li>
-                            <li><%= link_to "Светильники", catalog_mebeli_path(:id => 15) %></li> 
+                            <li><%= link_to "Светильники", catalog_mebeli_path(:id => 15) %></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div id="content_body">
-        	<div id="filtr">
-                    <form action="#">
-                    <div id="razdel">
-                        <select class="selectBlock">
-                            <option>Выбрать раздел</option>
-                            <option>Выбрать раздел</option>
-                            <option>Выбрать раздел</option>
-                            <option>Выбрать раздел</option>
-                            <option>Выбрать раздел</option>
-                        </select>
-                    </div>
-                     <div id="razdel">
-                        <select class="selectBlock">
-                            <option>Выбрать предмет</option>
-                            <option>Выбрать предмет</option>
-                            <option>Выбрать предмет</option>
-                            <option>Выбрать предмет</option>
-                            <option>Выбрать предмет</option>
-                        </select>
-                    </div>
-                     <div id="razdel">
-                        <select class="selectBlock">
-                            <option>Выбрать фабрику</option>
-                            <option>Выбрать фабрику</option>
-                            <option>Выбрать фабрику</option>
-                            <option>Выбрать фабрику</option>
-                            <option>Выбрать фабрику</option>
-                        </select>
-                    </div>
-                     <div id="razdel">
-                        <select class="selectBlock">
-                            <option>Выбрать стиль</option>
-                            <option>Выбрать стиль</option>
-                            <option>Выбрать стиль</option>
-                            <option>Выбрать стиль</option>
-                            <option>Выбрать стиль</option>
-                        </select>
-                    </div>
-                    <div id="razdel">
-                    	<input type="submit" value="" id="searchbutton"/>
-                    </div>
-                	</form>
-            </div>
-            <div id="content_main">
-            	<div style="position:relative; top:30px; left: 50px; text-align: justify; width: 965px;">
-                	<%= yield %>                    
+          <div id="filtr">
+            <%= render :partial => 'products/search_product' %>
+          </div>
+          <div id="content_main">
+            <div style="position:relative; top:30px; left: 50px; text-align: justify; width: 965px;">
+                	<%= yield %>
                 </div>
             </div>
         </div>
 	</div>
     <div style="clear: left;"></div>
-</div>    
+</div>
 <!-- end section-->
 
     <%= render 'layouts/footer' %>

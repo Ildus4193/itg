@@ -1,0 +1,36 @@
+<%= form_for @search do |f| %>
+  <div id="razdel">
+    <%= collection_select(:product_search, :title_contains, Product.all, :id, :title), :class => "selectBlock" %>
+  </div>
+  <div id="razdel">
+    <select class="selectBlock">
+      <option>Выбрать предмет</option>
+      <option>Выбрать предмет</option>
+      <option>Выбрать предмет</option>
+      <option>Выбрать предмет</option>
+      <option>Выбрать предмет</option>
+    </select>
+  </div>
+  <div id="razdel">
+    <select class="selectBlock">
+      <option>Выбрать фабрику</option>
+      <option>Выбрать фабрику</option>
+      <option>Выбрать фабрику</option>
+      <option>Выбрать фабрику</option>
+      <option>Выбрать фабрику</option>
+    </select>
+  </div>
+  <div id="razdel">
+    <select class="selectBlock">
+      <option>Выбрать стиль</option>
+      <option>Выбрать стиль</option>
+      <option>Выбрать стиль</option>
+      <option>Выбрать стиль</option>
+      <option>Выбрать стиль</option>
+    </select>
+  </div>
+  <div id="razdel">
+    <input type="submit" value="" id="searchbutton"/>
+  </div>
+<% end %>
+
