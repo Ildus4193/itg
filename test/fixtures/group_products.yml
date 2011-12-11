@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  catalog_mebeli_id: 1
+  mirror_id: 1
+  bed_id: 1
+  table_id: 1
+
+two:
+  name: MyString
+  catalog_mebeli_id: 1
+  mirror_id: 1
+  bed_id: 1
+  table_id: 1

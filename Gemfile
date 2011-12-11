@@ -10,6 +10,7 @@ gem "paperclip", "~> 2.3"
 gem 'jquery-rails'
 gem 'meta_where'
 gem 'meta_search'
+gem 'activeadmin'
 
 
 # Use unicorn as the web server
