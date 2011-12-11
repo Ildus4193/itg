@@ -7,11 +7,14 @@ one:
   series: MyString
   presence: MyString
   lgth: 1
-  dpth: 1
   height: 1
   description: MyText
-  catalog_mebelis_id: 1
+  catalog_mebeli_id: 1
   style_m_id: 1
+  avatar_file_name: MyString
+  avatar_content_type: MyString
+  avatar_file_size: MyString
+  avatar_updated_at: MyString
 
 two:
   title: MyString
@@ -20,8 +23,11 @@ two:
   series: MyString
   presence: MyString
   lgth: 1
-  dpth: 1
   height: 1
   description: MyText
-  catalog_mebelis_id: 1
+  catalog_mebeli_id: 1
   style_m_id: 1
+  avatar_file_name: MyString
+  avatar_content_type: MyString
+  avatar_file_size: MyString
+  avatar_updated_at: MyString

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111211133647) do
+ActiveRecord::Schema.define(:version => 20111211133648) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -82,17 +82,19 @@ ActiveRecord::Schema.define(:version => 20111211133647) do
     t.string   "series"
     t.string   "presence"
     t.integer  "lgth"
-    t.integer  "dpth"
     t.integer  "height"
     t.text     "description"
     t.integer  "catalog_mebeli_id"
     t.integer  "style_m_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
+    t.string   "avatar_file_size"
+    t.string   "avatar_updated_at"
+    t.integer  "mirror_id"
+    t.integer  "bad_id"
+    t.integer  "table_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "style_ms", :force => true do |t|

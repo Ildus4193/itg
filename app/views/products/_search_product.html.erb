@@ -4,13 +4,7 @@
     <%= f.collection_select :catalog_mebeli_id_eq, CatalogMebeli.all, :id, :title, :class => "selectBlock"  %>
   </div>
   <div id="razdel">
-    <select class="selectBlock">
-      <option>Выбрать предмет</option>
-      <option>Выбрать предмет</option>
-      <option>Выбрать предмет</option>
-      <option>Выбрать предмет</option>
-      <option>Выбрать предмет</option>
-    </select>
+    <%= f.collection_select :mirror_id_eq, Mirror.all, :id, :title, :class => "selectBlock"  %>
   </div>
   <div id="razdel">
     <select class="selectBlock">

@@ -1,13 +1,13 @@
-<% i=1 %> 
+<% i=1 %>
 <div class="group_gallery" style=" height: 180px;">
   <div style="vertical-align: bottom;position:relative; height: 140px; ">
     <%= link_to (image_tag(product.avatar.url(:thumb), :class => "round")), product %>
   </div>
-  <div style=" height: 35px; width: 165px;"> 
+  <div style=" height: 35px; width: 165px;">
     <p><%= product.title %></p>
     <p style="color: #F26925;"><%= product.article %>
 <%# if admin_signed_in? %>
-<%#= link_to 'Удалить', product, 
+<%#= link_to 'Удалить', product,
 :confirm => 'Are you sure?',
 :method => :delete %>
 <%# end %>
@@ -18,4 +18,4 @@
     <% i=0 %>
   <% end %>
   <% i += 1 %>
-</div>	
+</div>
