@@ -10,7 +10,9 @@ gem "paperclip", "~> 2.3"
 gem 'jquery-rails'
 gem 'meta_where'
 gem 'meta_search'
-gem 'activeadmin'
+gem 'activeadmin', :git => 'https://github.com/gregbell/active_admin.git'
+gem 'bourbon'
+gem 'will_paginate'
 
 
 # Use unicorn as the web server
