@@ -1,6 +1,7 @@
 <%= form_for @search do |f| %>
   <div id="razdel">
-    <%= collection_select(:product_search, :title_contains, Product.all, :id, :title), :class => "selectBlock" %>
+    <%#= select(:product_search, :catalog_mebeli_id, options_from_collection_for_select(CatalogMebeli.all, :title, :title)) %>
+    <%= f.collection_select :catalog_mebeli_id_eq, CatalogMebeli.all, :id, :title, :class => "selectBlock"  %>
   </div>
   <div id="razdel">
     <select class="selectBlock">

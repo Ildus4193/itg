@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.xml
   def index
-    @search = Product.search(params[:product_search])
+    @search = Product.search(params[:search])
     @products = @search.all
     respond_to do |format|
       format.html # index.html.erb

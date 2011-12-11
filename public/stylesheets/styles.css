@@ -39,7 +39,7 @@ body {
    vertical-align: middle;
 	background-color:#999;
    background: url(/images/body_bg.jpg);
-   
+
 }
 #header {
 	background: url(/images/header_bg.png) no-repeat;
@@ -184,7 +184,7 @@ body {
 	height: 828px;
 	border-top: solid 1px #878787;
 	border-right: solid 1px #535355;
-	
+
 }
 #sidebar {
 	position: relative;
@@ -200,7 +200,7 @@ body {
   font-family:  "Myriad Pro", Verdana, Geneva, sans-serif;
 }
 
-#sidebar ul li {	
+#sidebar ul li {
   margin: 12px 20px;
   list-style-image: url(/images/sidebar_li.png);
   text-indent: -5px;
@@ -242,7 +242,7 @@ body {
   font-family:  "Myriad Pro", Verdana, Geneva, sans-serif;
 }
 
-#sidebar_content_left ul li {	
+#sidebar_content_left ul li {
   margin: 12px 18px;
   list-style: none;
 
@@ -281,7 +281,7 @@ body {
 	min-height: 830px;
 	height:100%;
 	float: left;
-	
+
 }
 #content_left {
 	position: absolute;
@@ -347,7 +347,7 @@ body {
 		background:url(/images/select.png);
 		color:#666666;
 		font-size:14px;
-		font-family: "Myriad Pro", Verdana, Geneva, sans-serif; 
+		font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
 		line-height:27px;
 		zoom:1;
 		position:relative;
@@ -369,7 +369,7 @@ body {
 		opacity:0.85;
 		filter:alpha(opacity=85);
 		font-size:14px;
-		font-family: "Myriad Pro", Verdana, Geneva, sans-serif; 
+		font-family: "Myriad Pro", Verdana, Geneva, sans-serif;
 		padding:0 6px;
 		line-height:normal;
 		outline:none;
@@ -385,6 +385,9 @@ body {
 	width:169px;
 	top: 10px;
 	margin-left: 20px;
+}
+#razdel select {
+	width:169px;
 }
 
 #searchbutton{
@@ -406,8 +409,8 @@ body {
 	border-top: solid 1px #333333;
 	border-right: solid 1px #000000;
 	border-left: solid 1px #000000;
-	
-	
+
+
 }
 #ftr_left {
 	position: absolute;
@@ -432,7 +435,7 @@ body {
 	left: 30px;
 }
 #ftr_table a {
-    font: 14px 'Myriad Pro', Verdana, Geneva, sans-serif; 
+    font: 14px 'Myriad Pro', Verdana, Geneva, sans-serif;
 	color: #ffcc00;
 }
 #footer_table {
