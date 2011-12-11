@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(:version => 20111211133647) do
 
   create_table "beds", :force => true do |t|
     t.string   "title"
+    t.integer  "group_products_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20111211133647) do
 
   create_table "mirrors", :force => true do |t|
     t.string   "title"
+    t.integer  "group_products_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -101,6 +103,7 @@ ActiveRecord::Schema.define(:version => 20111211133647) do
 
   create_table "tables", :force => true do |t|
     t.string   "title"
+    t.integer  "group_products_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
